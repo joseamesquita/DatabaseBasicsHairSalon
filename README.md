@@ -21,9 +21,9 @@ _Application project to manage and operate the Hair Salon by creating a database
 
 ## SQL
 
-CREATE DATABASE `hair_salon`;
+CREATE DATABASE `jose_amesquita`;
 
-USE `hair_salon`;
+USE `jose_amesquita`;
 
 CREATE TABLE `stylists` (  
   `StylistId` int(11) NOT NULL AUTO_INCREMENT,  
