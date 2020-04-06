@@ -1,0 +1,22 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="text-center">
+  <h1 class="text-center">Welcome</h1>
+</div>
+
+<div class="text-center">
+  
+  <div class="text-center" id="search">
+  @using (Html.BeginForm("search","Stylists")) {
+  <input type="text" name="search" class="text-center"/>
+  <br>
+  <input type="submit" value="Search Stylists" class="btn btn">
+  }
+</div>
+    <button>@Html.ActionLink("View Stylists", "Index", "Stylists")</button>
+    <button>@Html.ActionLink("Add a Stylist", "Create", "Stylists")</button>
+    <button>@Html.ActionLink("View Clients", "Index", "Clients")</button>
+    <button>@Html.ActionLink("Add a Client", "Create", "Clients")</button>
+</div>
