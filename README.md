@@ -11,7 +11,8 @@ _Application project to manage and operate the Hair Salon by creating a database
 ## Behavior Driven Development
 | Behavior | Input | Output |
 |----|----|-----|
-|  |  |  |
+| user may view stylists | user selects the view stylists button | return page to create a new stylists |
+| user may view clients | user selects the view clients button | return page to create a new client | 
 
 
 ## Setup/Installation Requirements
