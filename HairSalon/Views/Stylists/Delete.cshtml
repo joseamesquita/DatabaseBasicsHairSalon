@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+@model HairSalon.Models.Stylist
+
+
+<div class="text-center">
+        <h2>Would you like to delete @Html.DisplayFor(model => model.StylistName)?</h2>
+        @using (Html.BeginForm())
+        {
+            <button class="btn btn" type="submit">YES</button>
+        }
+        <br>
+        
+        @Html.ActionLink("Back to List", "Index")
+</div>
