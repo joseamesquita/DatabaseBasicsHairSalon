@@ -29,16 +29,16 @@ CREATE TABLE `stylists` (
   `StylistId` int(11) NOT NULL AUTO_INCREMENT,  
   `StylistName` varchar(255) DEFAULT NULL,  
   PRIMARY KEY (`StylistId`)  
-)
+);
 
 CREATE TABLE `clients` (  
-  `ClientsId` int(11) NOT NULL AUTO_INCREMENT,  
-  `Name` varchar(255) DEFAULT NULL,   
+  `ClientId` int(11) NOT NULL AUTO_INCREMENT,  
+  `ClientName` varchar(255) DEFAULT NULL,   
   `Rating` int(11) DEFAULT NULL,  
   `Review` varchar(255) DEFAULT NULL,  
   `StylistId` int(11) DEFAULT '0',  
   PRIMARY KEY (`ClientId`)  
-)
+);
 
 ## Technologies Used
 
