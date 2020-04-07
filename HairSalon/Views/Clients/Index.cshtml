@@ -6,20 +6,17 @@
 @model List<HairSalon.Models.Client>;
   
   <div class="text-center">
-          <h1>Clients</h1>
+          <h1>Clients and their Stylist(s) (ex: client || stylist)</h1>
           
           @if (@Model.Count == 0)
           {
             <h2>No Clients have been added yet.</h2>
           } 
-          <ul>
             @foreach(Client client in Model)
             {
-                <li>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId }) || @client.Stylist.StylistName</li>
+                <p>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId }) || @client.Stylist.StylistName</p>
             }
 
             <p>@Html.ActionLink("Add Client", "Create")</p>
             <p>@Html.ActionLink("Home", "Index", "Home")</p>
-            
-          </ul>
   </div>        

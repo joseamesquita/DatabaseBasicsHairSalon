@@ -3,20 +3,17 @@
 }
 
 <div class="text-center">
-  <h1 class="text-center">Welcome</h1>
+  <h1 class="text-center">Welcome to Eau Claire's Salon</h1>
+  <p>Please select the Add a Stylist button below to get started. </p>
 </div>
 
 <div class="text-center">
   
   <div class="text-center" id="search">
   @using (Html.BeginForm("search","Stylists")) {
-  <input type="text" name="search" class="text-center"/>
   <br>
-  <input type="submit" value="Search Stylists" class="btn btn">
   }
 </div>
-    <button>@Html.ActionLink("View Stylists", "Index", "Stylists")</button>
     <button>@Html.ActionLink("Add a Stylist", "Create", "Stylists")</button>
-    @* <button>@Html.ActionLink("View Clients", "Index", "Clients")</button>
-    <button>@Html.ActionLink("Add a Client", "Create", "Clients")</button> *@
+    <button>@Html.ActionLink("View Stylists", "Index", "Stylists")</button>
 </div>
