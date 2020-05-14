@@ -15,9 +15,13 @@ _Application project to manage and operate the Hair Salon by creating a database
 | user selects add a stylist | user inputs stylist name and hire date then selects add | returns page to list of stylists | 
 | list of stylists page | user selects one of the stylists that have been created | returns details of stylist |
 
-## Setup/Installation Requirements
+## Objectives 
 
-
+* Database table and column names follow gerneral .NET naming conventions
+* Re-create database
+* Application uses one-to-many relationship
+* CREATE and VIEW functionality included 
+* Entity used for communication with the database
 
 ## SQL
 
