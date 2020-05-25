@@ -2,18 +2,20 @@
   Layout = "_Layout";
 }
 
-<div class="text-center">
-  <h1 class="text-center">Welcome to Eau Claire's Salon</h1>
+<div class="jumbotron text-center" style="background: linear-gradient(315deg, #9921e8 0%, #5f72be 74%); color: white">
+  <h1>Welcome to Eau Claire's Hair Salon</h1>
   <p>Please select the Add a Stylist button below to get started. </p>
 </div>
 
-<div class="text-center">
-  
-  <div class="text-center" id="search">
-  @using (Html.BeginForm("search","Stylists")) {
-  <br>
-  }
-</div>
-    <button>@Html.ActionLink("Add a Stylist", "Create", "Stylists")</button>
-    <button>@Html.ActionLink("View Stylists", "Index", "Stylists")</button>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8" id="search">
+      @using (Html.BeginForm("search","Stylists")) {
+      <br>
+      <h1>Stylists</h1>
+      <p style="color: whitesmoke;">We appreciate your interests in Eau Claire's Hair Salon. We offer equal opportunities to all persons without regard to race, color, religion, age, sex, disability, national origin, ancestry, citizenship, military or veteran status, marital status, sexual orientation, or any other status protected by law. Learn more through Stylist Careers and complete the form today.</p>
+      <button style="background-color: transparent;">@Html.ActionLink("Stylist Careers", "Create", "Stylists", null, new {style = "color: white;"})</button>
+      }
+    </div>
+  </div>  
 </div>

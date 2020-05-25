@@ -51,7 +51,8 @@ CREATE TABLE `clients` (
 * .NET Core
 * ASP.NET Razor
 * MySQL
-* Entity Framework Core
+* Entity Framework Core 2.2.0
+* LINQ (Language-Integrated Query)
 
 ### License
 
